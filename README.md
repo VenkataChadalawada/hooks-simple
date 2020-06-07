@@ -12,9 +12,9 @@ const [resource, setResource] = useState('posts');
 
 #### useEffect
 Allows a functional component to use lifecycle methods
-first render -> `useEffect(() => {}, ['posts']);`
-different values, so our arrow function gets called, same values our arrow function is Not going to be called
-second render -> `useEffect(() => {}, ['todos']);`
+- first render -> `useEffect(() => {}, ['posts']);`
+different values, so our arrow function gets called, same values our - arrow function is Not going to be called
+- second render -> `useEffect(() => {}, ['todos']);`
 
 #### useContext
 Allows a functional component to use the context system
