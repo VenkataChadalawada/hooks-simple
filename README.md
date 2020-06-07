@@ -36,13 +36,14 @@ Allow a functional component to store data through 'reducer'
 
 
 ##### usefeect
-No second argumrnt: `useEffect(()=>{})  -->  useEffect(()=>{})` CALLED every single time.
-empty array as second argument: `useEffect(()=>{},[]) -->  useEffect(()=>{},[])` NOTCALLED (only CALLED only first time)
-array with same number eg 1: `useEffect(()=>{},[1]) -->  useEffect(()=>{},[1])` NOTCALLED (only CALLED only first time)
-array with a change: `useEffect(()=>{},['hi']) -->  useEffect(()=>{},[1])` CALLED 
-array with a different object change: `useEffect(()=>{},[{color:'red'}]) -->  useEffect(()=>{},[{color:'red}])` CALLED - because object instantiation make everytime a different object with same value in this case
-array with multiple number eg 1: `useEffect(()=>{},[10,10]) --> useEffect(()=>{},[10,10])` NOTCALLED
-array with multiple number eg 1: `useEffect(()=>{},[10,10]) --> useEffect(()=>{},[10])` CALLED
+- No second argumrnt: `useEffect(()=>{})  -->  useEffect(()=>{})` CALLED every single time.
+- empty array as second argument: `useEffect(()=>{},[]) -->  useEffect(()=>{},[])` NOTCALLED (only CALLED only first time)
+- array with same number eg 1: `useEffect(()=>{},[1]) -->  useEffect(()=>{},[1])` NOTCALLED (only CALLED only first time)
+- array with a change: `useEffect(()=>{},['hi']) -->  useEffect(()=>{},[1])` CALLED 
+- array with a different object change: `useEffect(()=>{},[{color:'red'}]) -->  useEffect(()=>{},[{color:'red}])` CALLED - because object
+- instantiation make everytime a different object with same value in this case
+- array with multiple number eg 1: `useEffect(()=>{},[10,10]) --> useEffect(()=>{},[10,10])` NOTCALLED
+- array with multiple number eg 1: `useEffect(()=>{},[10,10]) --> useEffect(()=>{},[10])` CALLED
 
 
 ## Available Scripts
